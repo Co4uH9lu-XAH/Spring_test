@@ -6,6 +6,11 @@ public class Person {
     Person(Pet pet){
         this.pet = pet;
     }
+    Person (){}
+
+    public void setPet(Pet pet) {
+        this.pet = pet;
+    }
 
     public void callYourPet(){
         System.out.println("Hey, you!");
