@@ -7,6 +7,7 @@ public class Main {
         ClassPathXmlApplicationContext context= new ClassPathXmlApplicationContext("applicationContext.xml");
         MusicPlayer musicPlayer = context.getBean("musicPlayerBean", MusicPlayer.class);
         musicPlayer.playSong();
+        System.out.println(musicPlayer.getVolume()+", "+musicPlayer.getName());
         context.close();
     }
 }
